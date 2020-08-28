@@ -52,14 +52,31 @@ optional arguments:
   -h, --help            show this help message and exit
   --deck_size_list DECK_SIZE_LIST [DECK_SIZE_LIST ...] Add Deck size
   --samples SAMPLES     Add sample size
-  --plot                Add low no of shuffle
-  --low LOW             Add max number of shuffle
+  --plot                Add plot
+  --low LOW             Add low no of shuffle
   --high HIGH           Add max number of shuffle
 
 ```
 Example:
 ```bash
- python3 OptimalNumberofshuffle.py --deck_size 26 52 104 --samples 100000 --low 1 --high 20
+ python3 OptimalNumberofshuffle.py --deck_size_list 26 52 104 --samples 10000 --low 1 --high 20
 ```
+---
 
+## Test 
+test for riffle.py and GRSAlgo shuffling
+```bash
+   python3 test_riffle.py
+```
+---
 
+## Plots
+
+variation distance plot for deck size 26,56,104
+
+[[deck size 26](https://github.com/adityaknegi/Shuffling/blob/master/img/26.png)]
+![](./img/26.png)</a>
+[[deck size 52](https://github.com/adityaknegi/Shuffling/blob/master/img/52.png)]
+![](./img/52.png)</a>
+[[deck size 104](https://github.com/adityaknegi/Shuffling/blob/master/img/104.png)]
+![](./img/104.png)</a>
