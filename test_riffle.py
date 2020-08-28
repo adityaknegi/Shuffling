@@ -4,7 +4,7 @@ from riffle import shuffle
 from GRSAlgo import gsr_shuffle
 
 
-class TestSum(unittest.TestCase):
+class TestRiffle(unittest.TestCase):
     def test_case_1(self):
         """
         Test shuffle for same set of values, input sequence in the preserve
