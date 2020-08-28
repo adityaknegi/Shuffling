@@ -5,7 +5,7 @@ from typing import List
 
 def rising_sequences(deck: np.array) -> int:
     """
-    Methode for return no of rising sequence
+    Method for return no of rising sequence
 
 
     Parameters
@@ -25,7 +25,7 @@ def rising_sequences(deck: np.array) -> int:
 def total_variation(prob_distribution_kth_shuffle: np.array,
                     approx_complete_shuffle: np.array) -> float:
     """
-    Methode for total variation between kth shuffle and almost complete shuffle distribution
+     Method for total variation between kth shuffle and almost complete shuffle distribution
 
     Parameters
     ----------
@@ -90,7 +90,7 @@ def calculating_total_variations(deck_size: int,
                                  low: int = 0,) -> List[float]:
 
     """
-    Methods for finding total variations for deck with low(inclusive) to high(exclusive) shuffle
+     Method for finding total variations for deck with low(inclusive) to high(exclusive) shuffle
 
     Parameters
     ----------
