@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ---
 
 ## Run
-Use --help to see riffle.py Usage
+Use --help to see riffle.py Usage.
 
 ```bash
   usage: riffle.py [-h] [--deck_size DECK_SIZE] [--my_seed MY_SEED]
@@ -22,13 +22,17 @@ optional arguments:
   --deck_size DECK_SIZE Add Deck size example 52
   --my_seed MY_SEED     Add seed value example 0
 ```
+
+Riffle shuffle.
+
 Example:
 ```bash
   python3 riffle.py --deck_size 52 my_seed 10
 ```
 
 
-Use --help to see GRSAlgo Usage
+Use --help to see GRSAlgo Usage.
+
 ```bash
 usage: GRSAlgo.py [-h] [--deck_size DECK_SIZE]
 
@@ -37,11 +41,14 @@ optional arguments:
   --deck_size DECK_SIZE Add Deck size
 
 ```
+Gilbert–Shannon–Reeds model.
+
 Example:
 ```bash
   python3 GRSAlgo.py --deck_size 52
 ```
 Use --help to see Python3 OptimalNumberofshuffle.py Usage
+
 ```bash
 usage: OptimalNumberofshuffle.py [-h]
                                  [--deck_size_list DECK_SIZE_LIST [DECK_SIZE_LIST ...]]
@@ -57,6 +64,9 @@ optional arguments:
   --high HIGH           Add max number of shuffle
 
 ```
+
+Finding variation distance after k number of shuffle
+
 Example:
 ```bash
  python3 OptimalNumberofshuffle.py --deck_size_list 26 52 104 --samples 10000 --low 1 --high 20
