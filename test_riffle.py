@@ -7,7 +7,7 @@ from GRSAlgo import gsr_shuffle
 class TestRiffle(unittest.TestCase):
     def test_case_1(self):
         """
-        Test shuffle for same set of values, input sequence in the preserve
+        Test shuffle for same set of values, input sequence preserve
         """
         print("-------------------shuffle-----------------------------------")
         for _ in range(10):
@@ -24,7 +24,7 @@ class TestRiffle(unittest.TestCase):
 
     def test_case_2(self):
         """
-        Test gsr_shuffle for same set of values, input sequence in the preserve
+        Test gsr_shuffle for same set of values, input sequence preserve
         """
         print("-------------------gsr_shuffle-----------------------------------")
         for _ in range(5):
