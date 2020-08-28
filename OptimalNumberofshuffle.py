@@ -222,7 +222,7 @@ def cutoff_phenomenon(deck_size_list: List[int],
         #  find min shuffle to randomized cards
         min_shuffle = np.where(np.asarray(total_variation_distance_list) < 0.5)[0]
         if len(min_shuffle) > 0:
-            min_shuffle_list.append(min_shuffle[0])
+            min_shuffle_list.append(min_shuffle[0]+1)
             if plot:
                 plot_total_variation_graph(y=total_variation_distance_list,
                                            x=list(np.arange(low, high-low + 1)),
@@ -240,8 +240,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--deck_size_list', default=[26, 52, 104], help='Add Deck size', type=int, nargs='+')
     parser.add_argument('--samples', default=10000, help='Add sample size', type=int)
-    parser.add_argument('--plot', action='store_false', help='Add low no of shuffle')
-    parser.add_argument('--low', default=1, help='Add max number of shuffle', type=int)
+    parser.add_argument('--plot', action='store_false', help='Add plot')
+    parser.add_argument('--low', default=1, help='Add min number of shuffle', type=int)
     parser.add_argument('--high', default=20, help='Add max number of shuffle', type=int)
 
     opt = parser.parse_args()
